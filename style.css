@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0FF0FC, #A300F5, #FF0095, #FFEA00);
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A1A1D;
+    box-shadow: 0 0 15px #0FF0FC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-family: 'Bungee', cursive;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF0095;
+    text-shadow: 0 0 15px #0FF0FC;
+}
+
+.navbar-logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #FFEA00;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    transform: translateX(-30px);
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 5px 10px;
+}
+
+.navbar-links a:hover {
+    color: #FFEA00;
+    transform: translateY(-3px);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #FF0095;
+    cursor: pointer;
+    margin-left: -70px;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 111%;
+        right: 15px;
+        background: #1A1A1D;
+        padding: 15px;
+        box-shadow: 0 0 10px #A300F5;
+        border: 2px solid white;
+        border-radius: 3px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.content {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    font-family: 'Righteous', cursive;
+}
+
+.content h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 20px #FF0095;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.slider-container {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    margin: auto;
+}
+
+/* Track holding images */
+.slider-track {
+    display: flex;
+    width: calc(600px * 8); /* Duplication for seamless loop */
+    animation: infiniteScroll 20s linear infinite;
+}
+
+/* Individual images styling */
+.slider-track img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Infinite Right-to-Left animation */
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2400px); /* Move total width of 4 images */
+    }
+}
+
+/* Hover to pause effect */
+.slider-container:hover .slider-track {
+    animation-play-state: paused;
+}
+
+
+/* Side Pop-Up Icons */
+#contact {
+    position: fixed;
+    top: calc(50% - 120px); /* Position from the center */
+    right: 10px; /* Moved 10px to the right */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 5px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#contact a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
+    text-shadow: 0 0 10px #00bcd4;
+    border: 2px solid #ffffff; /* White circular border */
+    border-radius: 50%; /* Fully round border */
+    padding: 10px; /* Increased padding to make a more circular appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Set width and height for perfect circle */
+    height: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px #ff00a6, 0 0 30px #ffea00;
+    border: 3px solid #ff00a6; /* Pink border on hover */
+    background-color: whitesmoke; /* Background color change on hover */
+}
+
+
+
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    background: #1A1A1D;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px #0FF0FC;
+    font-family: 'Share Tech Mono', monospace;
+}
