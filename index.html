@@ -57,6 +57,12 @@
         <a href="https://t.me/+918115231559"><i class="fab fa-telegram-plane"></i></a>
     </div>
 
+    <!-- Hidden Icon to show again (Messenger Icon only) -->
+    <div id="toggle-icon">
+        <i class="fab fa-facebook-messenger"></i>
+    </div>
+
+    
     <footer>
         © 2025 VANSH TECH STUDY - All rights reserved
     </footer>
@@ -69,16 +75,29 @@
             hamburger.textContent = menu.classList.contains('active') ? '✖' : '☰';
         }
 
-        // let slideIndex = 0;
-        // const slides = document.querySelectorAll('.slide');
-        // function showSlides() {
-        //     slides.forEach(slide => slide.style.display = 'none');
-        //     slideIndex++;
-        //     if (slideIndex > slides.length) slideIndex = 1;
-        //     slides[slideIndex - 1].style.display = 'block';
-        //     setTimeout(showSlides, 2000);
-        // }
-        // showSlides();
+        // Get the elements
+        const contactDiv = document.getElementById('contact');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        // Function to hide contact icons and show the toggle icon after 10 seconds
+        function hideIcons() {
+            contactDiv.style.opacity = '0'; // Hide the icons
+            toggleIcon.style.display = 'block'; // Show the toggle icon after 10 seconds
+        }
+
+        // When the toggle icon is clicked, show the contact options again
+        toggleIcon.addEventListener('click', function() {
+            contactDiv.style.opacity = '1'; // Show the contact section again
+            toggleIcon.style.display = 'none'; // Hide the toggle icon again
+            setTimeout(function() {
+                hideIcons(); // Hide again after 10 seconds
+            }, 4500); // 10 seconds
+        });
+
+        // Initially hide the contact icons and show the toggle icon after 10 seconds
+        setTimeout(function() {
+            hideIcons(); // Hide contact icons after 10 seconds
+        }, 5500); // 10 seconds
     </script>
 </body>
 </html>
