@@ -60,7 +60,7 @@ body {
 
 .navbar-links a:hover {
     color: #ffffff;
-    transform:translate(-3px, -3px);
+    transform: translate(-3px, -3px);
     text-shadow: 0 0 10px #61ffea;
     font-weight: bolder;
     scale: 1.2;
@@ -131,7 +131,8 @@ body {
 /* Track holding images */
 .slider-track {
     display: flex;
-    width: calc(600px * 8); /* Duplication for seamless loop */
+    width: calc(600px * 8);
+    /* Duplication for seamless loop */
     animation: infiniteScroll 20s linear infinite;
 }
 
@@ -147,8 +148,10 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(-2400px); /* Move total width of 4 images */
+        transform: translateX(-2400px);
+        /* Move total width of 4 images */
     }
 }
 
@@ -161,13 +164,18 @@ body {
 /* Side Pop-Up Icons */
 #contact {
     position: fixed;
-    top: calc(50% - 120px); /* Position from the center */
-    right: 10px; /* Moved 10px to the right */
+    top: calc(50% - 120px);
+    /* Position from the center */
+    right: 10px;
+    /* Moved 10px to the right */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 13px;
     padding: 5px;
+    opacity: 1;
+    /* Ensure the contact icons show immediately */
+    transition: opacity 1s ease, top 1s ease;
 }
 
 #contact p {
@@ -183,15 +191,19 @@ body {
 #contact a {
     color: #fff;
     font-size: 1.8rem;
-    transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease,;
     text-shadow: 0 0 10px #00bcd4;
-    border: 2px solid #ffffff; /* White circular border */
-    border-radius: 50%; /* Fully round border */
-    padding: 10px; /* Increased padding to make a more circular appearance */
+    border: 2px solid #ffffff;
+    /* White circular border */
+    border-radius: 50%;
+    /* Fully round border */
+    padding: 10px;
+    /* Increased padding to make a more circular appearance */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px; /* Set width and height for perfect circle */
+    width: 50px;
+    /* Set width and height for perfect circle */
     height: 50px;
     box-sizing: border-box;
     text-decoration: none;
@@ -200,11 +212,31 @@ body {
 #contact a:hover {
     transform: scale(1.1);
     text-shadow: 0 0 20px #ff00a6, 0 0 30px #ffea00;
-    border: 3px solid #ff00a6; /* Pink border on hover */
-    background-color: whitesmoke; /* Background color change on hover */
+    border: 3px solid #ff00a6;
+    /* Pink border on hover */
+    background-color: whitesmoke;
+    /* Background color change on hover */
 }
 
+#toggle-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: #fff;
+    border-radius: 50%; /* Fully round */
+    padding: 0 13px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: transform 0.3s ease, background 0.6s ease;
+    border: 2px solid #fff; /* Fully round border */
+    background: transparent;
+}
 
+#toggle-icon:hover {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+}
 
 footer {
     margin-top: auto;
