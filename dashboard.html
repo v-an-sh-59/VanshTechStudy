@@ -1,59 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VANSH TECH STUDY</title>
     <style>
         /* CSS Styling */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background-color: #0d1117; color: #e6edf3; line-height: 1.6; padding: 0 20px; text-align: center; scroll-behavior: smooth; transition: background-color 0.5s, color 0.5s; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-align: center;
+            scroll-behavior: smooth;
+            transition: background-color 0.5s, color 0.5s;
+        }
 
         /* Header Styling */
-        header { padding: 20px 0; background: linear-gradient(90deg, #00d9ff, #2b65f6); color: #fff; border-bottom: 3px solid #00d9ff; box-shadow: 0 0 20px #00d9ff; animation: glow 2s infinite alternate; }
-        h1 { font-size: 3em; letter-spacing: 2px; text-shadow: 0 0 10px #00d9ff; }
-        p { font-size: 1.2em; margin-bottom: 10px; }
+        header {
+            padding: 20px 0;
+            background: linear-gradient(90deg, #00d9ff, #2b65f6);
+            color: #fff;
+            border-bottom: 3px solid #00d9ff;
+            box-shadow: 0 0 20px #00d9ff;
+            animation: glow 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #00d9ff;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
 
         /* Navbar Styling */
-        nav { background: rgba(43, 101, 246, 0.9); padding: 10px; box-shadow: 0 0 10px #00d9ff; transition: 0.3s ease; }
-        nav a { color: #e6edf3; margin: 0 15px; text-decoration: none; font-weight: bold; transition: 0.3s ease; }
-        nav a:hover { color: #00d9ff; text-shadow: 0 0 10px #00d9ff; transform: scale(1.1); }
+        nav {
+            background: rgba(43, 101, 246, 0.9);
+            padding: 10px;
+            box-shadow: 0 0 10px #00d9ff;
+            transition: 0.3s ease;
+        }
+
+        nav a {
+            color: #e6edf3;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+            text-shadow: 0 0 10px #00d9ff;
+            transform: scale(1.1);
+        }
 
         /* Section Styling */
-        section { margin: 20px auto; padding: 20px; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 217, 255, 0.6); transition: transform 0.3s ease, box-shadow 0.3s ease; background: rgba(13, 17, 23, 0.9); cursor: pointer; width: 80%; max-width: 800px; }
-        section:hover { transform: translateY(-5px); box-shadow: 0 0 25px #2b65f6; background: rgba(13, 17, 23, 1); }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(13, 17, 23, 0.9);
+            cursor: pointer;
+            width: 80%;
+            max-width: 800px;
+        }
 
-        h2 { color: #00d9ff; margin-bottom: 10px; font-size: 2em; text-shadow: 0 0 10px #00d9ff; }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px #2b65f6;
+            background: rgba(13, 17, 23, 1);
+        }
+
+        h2 {
+            color: #00d9ff;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-shadow: 0 0 10px #00d9ff;
+        }
 
         /* Footer Styling */
-        footer { margin-top: 20px; padding: 10px; background: #2b65f6; color: #fff; box-shadow: 0 0 15px #2b65f6; }
-        a { color: #00d9ff; text-decoration: none; }
-        a:hover { color: #2b65f6; text-shadow: 0 0 10px #2b65f6; }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #2b65f6;
+            color: #fff;
+            box-shadow: 0 0 15px #2b65f6;
+        }
+
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2b65f6;
+            text-shadow: 0 0 10px #2b65f6;
+        }
 
         /* Back to Top Button */
-        #backToTop { position: fixed; bottom: 20px; right: 20px; background: #00d9ff; color: #fff; padding: 10px 15px; border-radius: 50%; cursor: pointer; display: none; box-shadow: 0 0 15px #00d9ff; }
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #00d9ff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 0 15px #00d9ff;
+        }
 
         /* Dark/Light Mode Toggle Button */
-        #themeToggle { position: fixed; top: 20px; right: 20px; padding: 10px; background: #00d9ff; color: #fff; cursor: pointer; border-radius: 5px; box-shadow: 0 0 10px #00d9ff; }
+        #themeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background: #00d9ff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #00d9ff;
+        }
 
         /* Glowing Animation */
-        @keyframes glow { from { box-shadow: 0 0 20px #00d9ff; } to { box-shadow: 0 0 30px #2b65f6; } }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 20px #00d9ff;
+            }
+
+            to {
+                box-shadow: 0 0 30px #2b65f6;
+            }
+        }
 
         /* Light Mode */
-        .light-mode { background-color: #f0f0f0; color: #333; }
-        .light-mode nav { background: #e6edf3; box-shadow: 0 0 10px #333; }
-        .light-mode nav a { color: #333; }
-        .light-mode nav a:hover { color: #2b65f6; text-shadow: 0 0 10px #2b65f6; }
-        .light-mode header, .light-mode footer { background: #ddd; color: #333; }
-        .light-mode section { background: #fff; box-shadow: 0 0 10px #bbb; }
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .light-mode nav {
+            background: #e6edf3;
+            box-shadow: 0 0 10px #333;
+        }
+
+        .light-mode nav a {
+            color: #333;
+        }
+
+        .light-mode nav a:hover {
+            color: #2b65f6;
+            text-shadow: 0 0 10px #2b65f6;
+        }
+
+        .light-mode header,
+        .light-mode footer {
+            background: #ddd;
+            color: #333;
+        }
+
+        .light-mode section {
+            background: #fff;
+            box-shadow: 0 0 10px #bbb;
+        }
 
         /* Responsive Styling */
-        @media (max-width: 600px) { 
-            h1 { font-size: 2em; } 
-            h2 { font-size: 1.5em; } 
-            p { font-size: 1em; } 
-            section { width: 100%; padding: 15px; }
-            nav a { margin: 0 8px; font-size: 0.9em; }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            section {
+                width: 100%;
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -73,13 +223,30 @@
         <p>Your one-stop platform for learning and growth!</p>
     </header>
 
-    <section id="study-material"><h2>📚 Study Materials</h2><p>Explore notes, PDFs, and more!</p></section>
-    <section id="video-resources"><h2>🎥 Video Resources</h2><p>Learn from the best video tutorials!</p></section>
-    <section id="quizzes"><h2>🧠 Quizzes</h2><p>Test your knowledge with fun quizzes!</p></section>
-    <section id="about"><h2>🤝 About Us</h2><p>Learn more about VANSH TECH STUDY!</p></section>
-    <section id="contact"><h2>📩 Contact Us</h2><p>Get in touch for more information.</p></section>
+    <section id="study-material">
+        <a href="Index.html"><h2>📚 Study Materials</h2></a>
+        <p>Explore notes, PDFs, and more!</p>
+    </section>
+    <section id="video-resources">
+        <h2>🎥 Video Resources</h2>
+        <p>Learn from the best video tutorials!</p>
+    </section>
+    <section id="quizzes">
+        <h2>🧠 Quizzes</h2>
+        <p>Test your knowledge with fun quizzes!</p>
+    </section>
+    <section id="about">
+        <h2>🤝 About Us</h2>
+        <p>Learn more about VANSH TECH STUDY!</p>
+    </section>
+    <section id="contact">
+        <h2>📩 Contact Us</h2>
+        <p>Get in touch for more information.</p>
+    </section>
 
-    <footer><p>© 2025 VANSH TECH STUDY. All Rights Reserved.</p></footer>
+    <footer>
+        <p>© 2025 VANSH TECH STUDY. All Rights Reserved.</p>
+    </footer>
 
     <button id="backToTop">⬆</button>
 
@@ -92,4 +259,5 @@
         });
     </script>
 </body>
+
 </html>
