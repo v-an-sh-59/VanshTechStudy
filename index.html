@@ -107,6 +107,11 @@
         setTimeout(function() {
             hideIcons(); // Hide contact icons after 10 seconds
         }, 4000); // 10 seconds
+            
+        document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Thappad khayega kya 👋");
+  });
     </script>
 </body>
 
