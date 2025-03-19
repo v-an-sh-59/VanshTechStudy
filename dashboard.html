@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANSH TECH STUDY</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            padding: 20px 0;
+            background: linear-gradient(90deg, #00d9ff, #2b65f6);
+            color: #fff;
+            border-bottom: 3px solid #00d9ff;
+            box-shadow: 0 0 20px #00d9ff;
+            animation: glow 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #00d9ff;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
+            transition: transform 0.3s ease;
+            background: rgba(13, 17, 23, 0.9);
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #2b65f6;
+            background: rgba(13, 17, 23, 1);
+        }
+
+        h2 {
+            color: #00d9ff;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-shadow: 0 0 10px #00d9ff;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #2b65f6;
+            color: #fff;
+            box-shadow: 0 0 15px #2b65f6;
+        }
+
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2b65f6;
+            text-shadow: 0 0 10px #2b65f6;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 20px #00d9ff;
+            }
+
+            to {
+                box-shadow: 0 0 30px #2b65f6;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to VANSH TECH STUDY 🚀</h1>
+        <p>Your one-stop platform for learning and growth!</p>
+    </header>
+
+    <!-- Sections -->
+    <section id="study-material">
+        <h2>📘 Study Materials</h2>
+        <p>Explore notes, tutorials, and quizzes across subjects!</p>
+    </section>
+    <section id="video-resources">
+        <h2>🎥 Video Resources</h2>
+        <p>Learn with engaging video lessons and tutorials.</p>
+    </section>
+    <section id="interactive-tools">
+        <h2>🔧 Interactive Tools & Apps</h2>
+        <p>Practice with coding playgrounds, simulations, and more.</p>
+    </section>
+    <section id="community-forum">
+        <h2>💬 Community Forum</h2>
+        <p>Ask questions, share experiences, and collaborate with peers.</p>
+    </section>
+    <section id="blog">
+        <h2>📰 Latest Blogs & News</h2>
+        <p>Stay updated with the latest educational content and news.</p>
+    </section>
+    <section id="resources">
+        <h2>🔗 Useful Resources</h2>
+        <p>Explore curated links to NCERT, e-Pathshala, SWAYAM, and more.</p>
+    </section>
+    <section id="social-media">
+        <h2>📲 Follow Us</h2>
+        <p>Stay connected on social media and never miss an update!</p>
+    </section>
+    <section id="quizzes">
+        <h2>🎯 Quizzes & Assessments</h2>
+        <p>Test your knowledge with interactive quizzes.</p>
+    </section>
+    <section id="courses">
+        <h2>📚 Courses & Certificates</h2>
+        <p>Complete courses and earn certificates to boost your career.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 VANSH TECH STUDY. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('section').forEach(section => {
+            section.addEventListener('click', () => {
+                section.style.backgroundColor = '#2b65f6';
+                section.style.color = '#fff';
+                setTimeout(() => {
+                    section.style.backgroundColor = 'rgba(13, 17, 23, 0.9)';
+                    section.style.color = '#e6edf3';
+                }, 1000);
+                alert(`✨ Welcome to ${section.querySelector('h2').innerText} section! ✨`);
+            });
+        });
+    </script>
+</body>
+
+</html>
