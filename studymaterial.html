@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Tech Study - Study Materials</title>
+    <style>
+        body { background-color: #0a0a0a; color: #fff; font-family: 'Poppins', Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #111; padding: 20px; text-align: center; box-shadow: 0 0 15px #ff00ff; }
+        header h1 { color: #ff00ff; font-size: 2.8rem; margin: 0; text-shadow: 0 0 20px #00ff00; animation: glow 1.5s infinite alternate; }
+
+        nav { background: #222; padding: 10px; text-align: center; box-shadow: 0 0 10px #00ff00; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+
+        .welcome-section, .section, .faq-section, .contact-section { 
+            text-align: center; 
+            padding: 40px 20px; 
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d); 
+            box-shadow: 0 0 20px #ff00ff; 
+            border-radius: 10px; 
+            margin: 20px auto;
+            width: 80%;
+        }
+        .section h2, .faq-section h2, .contact-section h2 { color: #ff00ff; }
+
+        button { 
+            padding: 10px 20px; 
+            background: #222; 
+            color: #fff; 
+            border: 1px solid #ff00ff; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 0 10px #00ff00; 
+            font-weight: bold; 
+        }
+        button:hover { background: #ff00ff; color: #000; transform: scale(1.1); box-shadow: 0 0 20px #ff00ff; }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid #ff00ff;
+            background: #222;
+            color: #fff;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        @keyframes glow { from { text-shadow: 0 0 15px #ff00ff; } to { text-shadow: 0 0 30px #00ff00; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vansh Tech Study</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#materials">Study Materials</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="welcome-section">
+        <h2>Welcome to Vansh Tech Study!</h2>
+        <p>Your one-stop platform for Polytechnic study materials and syllabus.</p>
+        <input type="text" placeholder="Search for subjects, branches, or topics...">
+    </section>
+
+    <section class="section" id="branches">
+        <h2>🔧 Select Your Branch</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <button>Computer Science</button>
+            <button>Electrical</button>
+            <button>Mechanical</button>
+            <button>Civil</button>
+            <button>Electronics</button>
+            <button>IT</button>
+            <button>Automobile</button>
+            <button>Textile</button>
+            <button>Chemical</button>
+            <button>Biotechnology</button>
+            <button>Mining</button>
+            <button>Aeronautical</button>
+            <button>Instrumentation</button>
+            <button>Production</button>
+            <button>Environmental</button>
+        </div>
+    </section>
+
+    <section class="section" id="semesters">
+        <h2>📚 Select Your Semester</h2>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+            <button>Semester 1</button>
+            <button>Semester 2</button>
+            <button>Semester 3</button>
+            <button>Semester 4</button>
+            <button>Semester 5</button>
+            <button>Semester 6</button>
+        </div>
+    </section>
+
+    <section class="section" id="syllabus">
+        <h2>📚 Polytechnic Syllabus</h2>
+        <p>Download your syllabus by branch and semester.</p>
+        <button onclick="alert('Syllabus Download Coming Soon!')">Download Syllabus PDF</button>
+    </section>
+
+    <section class="section" id="resources">
+        <h2>🔥 Top Resources</h2>
+        <p>✔️ Data Structures & Algorithms PDF</p>
+        <p>✔️ Electrical Machines Notes</p>
+        <p>✔️ Civil Engineering Structure Design Guide</p>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <h2>❓ FAQ</h2>
+        <p><strong>Q1:</strong> How can I download study materials?</p>
+        <p><strong>A:</strong> Select your branch and semester, and download PDFs easily!</p>
+        <p><strong>Q2:</strong> Are the materials free?</p>
+        <p><strong>A:</strong> Yes, all study materials are absolutely free.</p>
+        <p><strong>Q3:</strong> Can I access materials offline?</p>
+        <p><strong>A:</strong> Yes, once downloaded, you can access PDFs offline anytime.</p>
+        <p><strong>Q4:</strong> How can I contact for help?</p>
+        <p><strong>A:</strong> Visit the Contact Us section for email and phone support.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>📞 Contact Us</h2>
+        <p>Email: support@vanshtechstudy.com</p>
+        <p>Phone: +91-9876543210</p>
+    </section>
+
+    <footer class="section">
+        <p>&copy; 2025 Vansh Tech Study. All rights reserved.</p>
+    </footer>
+</body>
+</html>
