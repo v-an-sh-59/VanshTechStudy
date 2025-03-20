@@ -21,26 +21,7 @@ Vansh Tech Study is a futuristic, neon-style educational platform designed to pr
 - **Database:** MongoDB
 
 ---
-## 💡 Contribution Guidelines
 
-We love contributions! Here’s how you can help:
-
-1. **Fork this repository**
-2. **Create a new branch**
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
-3. **Commit your changes**
-    ```bash
-    git commit -m "Added new feature: your-feature-name"
-    ```
-4. **Push the changes**
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-5. **Create a pull request**
-
----
 
 ## 📜 License
 
