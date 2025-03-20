@@ -48,10 +48,10 @@
 
 .navbar-links a:hover {
     color: #ffffff;
-    transform: translate(-3px, -3px);
+    /* transform: translate(-0.51px, -1px); */
     text-shadow: 0 0 10px #61ffea;
     font-weight: bolder;
-    scale: 1.2;
+    scale: 1.1;
 }
 
 .hamburger {
