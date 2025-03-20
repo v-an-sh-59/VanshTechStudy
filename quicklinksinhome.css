@@ -10,11 +10,18 @@
     background-color: #1e1e2f;
     color: #fff;
     line-height: 1.6;
+    
   }
 
   /* Main Container */
   .main-container {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
