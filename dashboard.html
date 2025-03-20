@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANSH TECH STUDY</title>
+    <link rel="icon" type="image/png" href="mypic.jpg">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#study-material">Study Materials</a>
+        <a href="#video-resources">Videos</a>
+        <a href="#quizzes">Quizzes</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle">🌗 Toggle Theme</button>
+
+    <header>
+        <h1>Welcome to VANSH TECH STUDY 🚀</h1>
+        <p>Your one-stop platform for learning and growth!</p>
+    </header>
+
+    <section id="study-material">
+        <a href="Index.html"><h2>📚 Study Materials</h2></a>
+        <p>Explore notes, PDFs, and more!</p>
+    </section>
+    <section id="video-resources">
+        <h2>🎥 Video Resources</h2>
+        <p>Learn from the best video tutorials!</p>
+    </section>
+    <section id="quizzes">
+        <h2>🧠 Quizzes</h2>
+        <p>Test your knowledge with fun quizzes!</p>
+    </section>
+    <section id="about">
+        <h2>🤝 About Us</h2>
+        <p>Learn more about VANSH TECH STUDY!</p>
+    </section>
+    <section id="contact">
+        <h2>📩 Contact Us</h2>
+        <p>Get in touch for more information.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 VANSH TECH STUDY. All Rights Reserved.</p>
+    </footer>
+
+    <button id="backToTop">⬆</button>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.innerText = body.classList.contains('light-mode') ? '🌙 Dark Mode' : '🌗 Light Mode';
+        });
+    </script>
+</body>
+
+</html>

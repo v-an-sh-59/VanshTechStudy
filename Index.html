@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VANSH TECH STUDY - Your ultimate destination for study materials, resources, and tech knowledge.">
+    <meta name="keywords" content="Study, Tech, Resources, Learning, VANSH TECH STUDY">
+    <meta name="author" content="VANSH TECH STUDY">
+    <title>VANSH TECH STUDY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&family=Righteous&family=Share+Tech+Mono&family=Pacifico&family=Monoton&family=Anton&family=Bungee&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contacticons.css">
+    <link rel="stylesheet" href="slider1.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="features.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="userssays.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="quicklinksinhome.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="mypic.jpg" alt="Logo">
+            VANSH TECH STUDY
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="navbar-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#subjects">Study materials (PDFs)</a>
+            <a href="https://bteup.ac.in/webapp/janhit.aspx">Result</a>
+            <a href="#contact">Second-Hand Books</a>
+        </div>
+    </div>
+
+    <div class="content" id="home">
+        <h1>Welcome to VANSH TECH STUDY!</h1>
+        <p>Your ultimate destination for study materials, resources, and tech knowledge.</p><br>
+        <a href="#features" class="cta-button">Explore Now</a><br>
+
+    </div>
+
+
+<!-- Main Container -->
+  <div class="main-container">
+    <!-- Left Side: Quick Links -->
+    <div class="quick-links">
+      <h3>Quick Links</h3>
+      <div class="scrolling-container">
+        <ul class="social-links">
+          <li>
+            <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/yourpage" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/yourchannel" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram">
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="mailto:youremail@example.com">
+              <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email">
+              Email
+            </a>
+          </li>
+          <!-- Duplicate links for infinite scroll -->
+          <li>
+            <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/yourpage" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/yourchannel" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram">
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/yourprofile" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="mailto:youremail@example.com">
+              <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email">
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Side: Important Notices -->
+    <div class="important-notice">
+      <h3>Important Notice</h3>
+      <div class="notice-container">
+        <ul class="notice-list" id="notice-list">
+          <!-- Notices will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Free Resources</h3>
+            <p>Access a wide range of free tutorials, guides, and cheat sheets to enhance your skills.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Interactive Learning</h3>
+            <p>Practice coding directly in your browser with our interactive editor and real-time feedback.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Community Support</h3>
+            <p>Join our vibrant community to ask questions, share knowledge, and collaborate on projects.</p>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-card">
+            <p>"VanshTechStudy helped me learn web development from scratch. Highly recommended!"</p>
+            <span>- John Doe</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"The interactive learning platform is amazing. I improved my coding skills significantly."</p>
+            <span>- Jane Smith</span>
+        </div>
+    </section>
+
+
+
+    <div id="contact">
+        <p>Follow us:</p>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/v-an-sh-59"><i class="fab fa-github"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/+918115231559"><i class="fab fa-whatsapp"></i></a>
+        <a href="VIJAYPRAKASH07077@GMAIL.COM.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://t.me/+918115231559"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+
+    <!-- Hidden Icon to show again (Messenger Icon only) -->
+    <div id="toggle-icon">
+        <i class="fab fa-facebook-messenger"></i>
+    </div>
+
+
+    <footer>
+        © 2025 VANSH TECH STUDY - All rights reserved
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-links');
+            menu.classList.toggle('active');
+            const hamburger = document.querySelector('.hamburger');
+            hamburger.textContent = menu.classList.contains('active') ? '✖' : '☰';
+        }
+
+        // Get the elements
+        const contactDiv = document.getElementById('contact');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        // Function to hide contact icons and show the toggle icon after 10 seconds
+        function hideIcons() {
+            contactDiv.style.opacity = '0'; // Hide the icons
+            contactDiv.style.visibility = 'hidden'; // Ensure the icons are invisible
+            contactDiv.style.pointerEvents = 'none'; // Disable clicks on hidden icons
+            toggleIcon.style.display = 'block'; // Show the toggle icon after 10 seconds
+        }
+
+        // When the toggle icon is clicked, show the contact options again
+        toggleIcon.addEventListener('click', function () {
+            contactDiv.style.opacity = '1'; // Show the contact section again
+            contactDiv.style.visibility = 'visible'; // Ensure the icons are visible
+            contactDiv.style.pointerEvents = 'auto'; // Enable clicks again
+            toggleIcon.style.display = 'none'; // Hide the toggle icon again
+            setTimeout(function () {
+                hideIcons(); // Hide again after 10 seconds
+            }, 10000); // 10 seconds
+        });
+
+        // Initially hide the contact icons and show the toggle icon after 10 seconds
+        setTimeout(function () {
+            hideIcons(); // Hide contact icons after 10 seconds
+        }, 10000); // 10 seconds
+
+
+        // right click disable karna....
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert("Thappad khayega kya 👋");
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'i' || e.key === 'I' || e.key === 'j' || e.key === 'J') || e.key === 'F12') {
+                e.preventDefault();
+                alert("Gand mara le saale....");
+            }
+        });
+
+
+
+// var _0x1234=["\x48\x65\x6C\x6C\x6F\x20\x57\x6F\x72\x6C\x64"];alert(_0x1234[0])
+
+
+
+
+// Function to fetch notices from BTEUP's website
+async function fetchNotices() {
+      try {
+        // Use a proxy server to bypass CORS (e.g., https://cors-anywhere.herokuapp.com/)
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'http://www.bteup.ac.in/';
+        const response = await fetch(proxyUrl + targetUrl);
+        const text = await response.text();
+
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, 'text/html');
+
+        // Extract notices (adjust the selector based on BTEUP's website structure)
+        const noticeElements = doc.querySelectorAll('.notice-list li'); // Example selector
+        const noticeList = document.getElementById('notice-list');
+        noticeList.innerHTML = '';
+
+        // Add fetched notices to the list
+        noticeElements.forEach((notice) => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <a href="${targetUrl}${notice.querySelector('a').getAttribute('href')}" target="_blank">
+              <span class="notice-date">${new Date().toLocaleDateString()}</span>
+              <span class="notice-text">${notice.textContent.trim()}</span>
+            </a>
+          `;
+          noticeList.appendChild(li);
+        });
+      } catch (error) {
+        console.error('Error fetching notices:', error);
+      }
+    }
+
+    // Fetch notices every 5 minutes (300,000 milliseconds)
+    fetchNotices();
+    setInterval(fetchNotices, 300000);
+
+
+
+
+    </script>
+</body>
+
+</html>

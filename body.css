@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(45deg, #00f2ff, #A300F5, #FF0095, #FFEA00); */
+    /* background-color: rgb(116, 116, 116); */
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
