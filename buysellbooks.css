@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ffff;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#buy,
+#sell {
+    padding: 20px;
+    background: #111;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+#buy input,
+#sell input,
+#sell select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#buy select,
+#sell select {
+    background-color: #111;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#buy select:hover,
+#sell select:hover {
+    background-color: #00ffff;
+    color: #111;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.book-card {
+    background: #111;
+    border: 1px solid #00ffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 15px #00ffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.book-card button {
+    background: #00ffff;
+    color: #111;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-card button:hover {
+    background: #0ff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+button {
+    background: #00ffff;
+    color: #111;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #00ffff;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #00ffff;
+    color: #111;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #00b5b5;
+    color: #fff;
+}
+
+.wishlist-button {
+    background: #ff9800;
+    color: #111;
+}
+
+.wishlist-button:hover {
+    background: #ff5722;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ff9800;
+    color: #111;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-mode header {
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #00ffff;
+}
+
+.light-mode nav a {
+    color: #000;
+}
+
+.light-mode section {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.light-mode #buy,
+.light-mode #sell {
+    background: #f9f9f9;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.light-mode button,
+.light-mode .wishlist-button {
+    background: #00ffff;
+    color: #111;
+}
+
+.light-mode .book-card {
+    background: #fff;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.light-mode .book-card button {
+    background: #00ffff;
+    color: #111;
+}

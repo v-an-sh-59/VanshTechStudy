@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polytechnic Second-Hand Books | Vansh Tech Study</title>
+    <link rel="stylesheet" href="buysellbooks.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Vansh Tech Study - Second-Hand Polytechnic Books</h1>
+        <nav>
+            <a href="#buy">Buy Books</a>
+            <a href="#sell">Sell Your Book</a>
+            <a href="#faq">FAQ</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+    <section id="buy">
+        <h2>Buy Second-Hand Books</h2>
+        <input type="text" placeholder="Search by book name or author">
+        <select>
+            <option>All Categories</option>
+            <option>Engineering</option>
+            <option>Computer Science</option>
+            <option>Electrical</option>
+        </select>
+        <input type="number" placeholder="Price Range (Max)">
+        <button>Search</button>
+    </section>
+
+    <section id="sell">
+        <h2>Sell Your Book</h2>
+        <input type="text" placeholder="Book Title">
+        <input type="text" placeholder="Author">
+        <input type="number" placeholder="Price">
+        <select>
+            <option>Engineering</option>
+            <option>Computer Science</option>
+            <option>Electrical</option>
+        </select>
+        <input type="file" accept="image/*">
+        <button>Sell</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We created Vansh Tech Study to help Polytechnic students easily buy and sell their books, saving money and
+            reducing waste. Our goal is to build a strong, supportive student community.</p>
+    </section>
+
+    <!-- Book List Section with 30 Books -->
+    <section id="book-list">
+        <h2>Available Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            <div class="book-card">
+                <img src="mypic.jpg" alt="Book 1">
+                <h3>Name: Book Name here...</h3>
+                <p>Author: Author Name here...</p>
+                <p>Condition: Used/New/Look New</p>
+                <p>Price: Price here... (₹500)</p>
+                <button>Contact Seller</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+            
+
+            <!-- Repeat the same structure for other books up to 30 -->
+            <!-- You can modify book titles, authors, prices, and images -->
+        </div>
+    </section>
+
+    <!-- Contact Us Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Vansh Tech Study | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggleButton = document.getElementById('theme-toggle');
+            body.classList.toggle('light-mode');
+
+            // Change button text based on the theme
+            if (body.classList.contains('light-mode')) {
+                themeToggleButton.innerHTML = 'Dark Mode';
+            } else {
+                themeToggleButton.innerHTML = 'Light Mode';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
