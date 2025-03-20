@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="quicklinksinhome.css">
     <link rel="stylesheet" href="notice.css">
+    <link rel="stylesheet" href="feedback1.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="navbar-links">
             <a href="dashboard.html">Dashboard</a>
-            <a href="#subjects">Study materials (PDFs)</a>
+            <a href="studymaterial.html">Study materials (PDFs)</a>
             <a href="https://bteup.ac.in/webapp/janhit.aspx">Result</a>
             <a href="buysellbooks.html">Second-Hand Books</a>
         </div>
@@ -200,11 +201,11 @@
 
     <div id="contact">
         <p>Follow us:</p>
-        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/vijay-prakash-8bb66b332/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/v-an-sh-59"><i class="fab fa-github"></i></a>
         <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/the_curious_vijay2/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@chesss_vijay"><i class="fab fa-youtube"></i></a>
         <a href="https://wa.me/+918115231559"><i class="fab fa-whatsapp"></i></a>
         <a href="VIJAYPRAKASH07077@GMAIL.COM.com"><i class="fas fa-envelope"></i></a>
         <a href="https://t.me/+918115231559"><i class="fab fa-telegram-plane"></i></a>
@@ -215,7 +216,15 @@
         <i class="fab fa-facebook-messenger"></i>
     </div>
 
-
+    <section class="feedback-section" id="feedback">
+        <h2>💡 Share Your Feedback</h2>
+        <form action="https://formspree.io/f/mnqergoq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="feedback" placeholder="Share your feedback here..." rows="4" required></textarea>
+            <button type="submit">🚀 Submit Feedback</button>
+        </form>
+    </section>
 
     <footer class="text-white p-10 border-t-4 border-neon-blue shadow-neon font-[Montserrat]">
         <!-- About Section on Top -->
@@ -231,11 +240,13 @@
                 <h2 class="text-2xl font-bold mb-4 text-neon-purple section-title">Quick Links</h2>
                 <ul class="space-y-3 fade-in">
                     <li><a href="#" class="hover:text-neon-green flicker-glow">🏠 Home</a></li>
-                    <li><a href="#" class="hover:text-neon-green flicker-glow">📊 Results Checker</a></li>
-                    <li><a href="#" class="hover:text-neon-green flicker-glow">📚 Book Store</a></li>
-                    <li><a href="#" class="hover:text-neon-green flicker-glow">📞 Contact Us</a></li>
-                    <li><a href="#" class="hover:text-neon-green flicker-glow">❓ FAQs</a></li>
-                    <li><a href="#" class="hover:text-neon-green flicker-glow">💡 Support</a></li>
+                    <li><a href="https://bteup.ac.in/webapp/janhit.aspx" class="hover:text-neon-green flicker-glow">📊
+                            Results Checker</a></li>
+                    <li><a href="studymaterial.html" class="hover:text-neon-green flicker-glow">📚 Book Store</a></li>
+                    <li><a href="tel:+918115231559" class="hover:text-neon-green flicker-glow">📞 Contact Us</a></li>
+                    <li><a href="faq.html" class="hover:text-neon-green flicker-glow">❓ FAQs</a></li>
+                    <li><a href="https://wa.me/+918115231159" class="hover:text-neon-green flicker-glow">💡 Support</a>
+                    </li>
                 </ul>
             </div>
 
