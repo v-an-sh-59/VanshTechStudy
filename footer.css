@@ -1,80 +1,131 @@
-/* Neon Styles with Vibrant Backgrounds */
-.border-neon-blue { border-color: #00FFFF; }
-.text-neon-blue { color: #00FFFF; }
-.text-neon-purple { color: #9D00FF; }
-.text-neon-orange { color: #FF8C00; }
-.text-neon-green { color: #39FF14; }
-.bg-neon-blue { background-color: #00FFFF; }
-
-/* Anchor Link Styling */
-footer a {
-  color: #f7a138;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.3s ease-in-out;
-  text-shadow: 0 0 8px #FF8C00;
-  margin-left: 20px;
-  text-decoration: none;
+/* Neon Styles with Vibrant Colors */
+.border-neon-blue {
+    border-color: #00FFFF;
 }
+
+.text-neon-blue {
+    color: #00FFFF;
+}
+
+.text-neon-purple {
+    color: #9D00FF;
+}
+
+.text-neon-orange {
+    color: #FF8C00;
+}
+
+.text-neon-green {
+    color: #39FF14;
+}
+
+.bg-neon-blue {
+    background-color: #00FFFF;
+}
+
+/* Footer General Styling */
+footer a {
+    color: #f7a138;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 8px #FF8C00;
+    text-decoration: none;
+}
+
 footer a:hover {
-  color: #00FFFF;
-  transform: scale(1.1);
-  text-shadow: 0 0 12px #00FFFF, 0 0 20px #39FF14;
-  margin-left: 20px;
+    color: #00FFFF;
+    transform: scale(1.1);
+    text-shadow: 0 0 12px #00FFFF, 0 0 20px #39FF14;
 }
 
 /* Paragraph Styling */
 footer p {
-  color: #DDDDDD;
-  font-size: 1rem;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-  transition: color 0.3s ease-in-out;
-  margin-left: 20px;
+    color: #DDDDDD;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease-in-out;
 }
+
 footer p:hover {
-  color: #00FFFF;
-  text-shadow: 0 0 10px #00FFFF, 0 0 20px #39FF14;
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #39FF14;
 }
 
 /* Hover Effects */
-.flicker-glow:hover { text-shadow: 0 0 8px #00FFFF, 0 0 15px #00FFFF; }
-.pulse-icon:hover { transform: scale(1.1); }
-
-/* Glow Inputs */
-.input-glow:focus { box-shadow: 0 0 8px #39FF14, 0 0 15px #39FF14; }
+.flicker-glow:hover {
+    text-shadow: 0 0 8px #00FFFF, 0 0 15px #00FFFF;
+}
 
 /* Fade-in Animation */
-.fade-in { animation: fadeIn 1.2s ease-in-out; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 /* Background Gradient Animation */
 @keyframes vibrantBackground {
-  0% { background: linear-gradient(45deg, #0f0c29, #302b63, #24243e); }
-  50% { background: linear-gradient(45deg, #141E30, #243B55); }
-  100% { background: linear-gradient(45deg, #0f0c29, #302b63, #24243e); }
+    0% {
+        background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #141E30, #243B55);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    }
 }
 
 footer {
-  box-shadow: 0 0 20px #00FFFF;
-  animation: vibrantBackground 4s infinite alternate;
-  background-size: 300% 300%;
-  padding: 20px;
-  width: 100%;
+    box-shadow: 0 0 20px #00FFFF;
+    animation: vibrantBackground 4s infinite alternate;
+    background-size: 300% 300%;
+    padding: 20px;
+    width: 100%;
+    border-top: 4px solid #00FFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.section-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
 }
 
 /* Copyright Style */
 .copyright {
-  font-size: 0.9rem;
-  color: #FFD700;
-  letter-spacing: 1px;
-  text-shadow: 0 0 8px #FFD700, 0 0 12px #FF8C00;
-  opacity: 0.8;
-  transition: all 0.3s ease-in-out;
-  margin-left: 20px;
+    font-size: 0.9rem;
+    color: #FFD700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FF8C00;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
 }
+
 .copyright:hover {
-  opacity: 1;
-  transform: translateX(5px);
-  margin-left: 20px;
+    opacity: 1;
+    transform: translateX(5px);
 }
